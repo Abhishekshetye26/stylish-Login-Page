@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #989591;
+}
+
+.login-container {
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  background-color: #D9D5CF;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+
+}
+
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border: 1px solid #8a8a8a89;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  position: relative;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #8a8a8a89;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #000000bb;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+button::after {
+content: "";
+position: absolute;
+height: 100%;
+width: 100%;
+background-color: black;
+left: 0;
+bottom: -100%;
+border-radius: 50%;
+transition: all ease 0.4s;
+}
+
+button:hover::after {
+bottom: 0;
+border-radius: 0;
+}
+
+
+button:hover a{
+
+color: #000000bb;
+text-decoration: none;
+position: relative;
+z-index: 9;
+}
+
+
+button:hover a{
+color: #fff;
+}
+
+.register{
+
+   display: flex;
+   justify-content: space-around;
+}
